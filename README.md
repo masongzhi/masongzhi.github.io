@@ -1,3 +1,3 @@
 GoPng
 =====
-https://github.com/masongzhi/masongzhi.github.io.git
+http://masongzhi.github.io.git
