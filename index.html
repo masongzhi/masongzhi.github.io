@@ -299,21 +299,11 @@
 				//css template
 				absolute_path: 'http://gopng/static/images/sprite.png',
 				relative_path: '',
-				template: '#gopng_<%=name%>_outer {\n\
-	height: <%=h%>px;\n\
-	width: <%=w%>px;\n\
-	overflow: hidden;\n\
-}\n\
-#gopng_<%=name%> {\n\
-	background: url(<%=absolute_path%>) -<%=x%>px -<%=y%>px no-repeat;\n\
-	width: 100%;\n\
-	height: 100%;\n\
-	_background: none;\n\
-	_padding-left: <%=x%>px;\n\
-	_margin-left: -<%=x%>px;\n\
-	_padding-top: <%=y%>px;\n\
-	_margin-top: -<%=y%>px;\n\
-	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="<%=absolute_path%>");\n\
+				template: '<%=name%>{\n\
+	height: <%=h/100%>rem;\n\
+	width: <%=w/100%>rem;\n\
+	background: url(<%=absolute_path%>) -<%=x/100%>rem -<%=y/100%>rem no-repeat;\n\
+	background-size: 0rem 0rem;\n\
 }\n\
 '
 
