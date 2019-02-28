@@ -7,7 +7,7 @@
 		<meta version="0.1.1alpha" />
 		<meta name="description" content="html5 css sprite tool gopng" />
 		<title>GoPng</title>
-		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="http://qplus1.idqqimg.com/module/common/scrollbar/scrollstyle.css">
 		<style>
 			#canvas {
@@ -50,7 +50,7 @@
 			.github_icon{
 				width: 18px;
 				height: 18px;
-				background:url(./img/github_icon.png) no-repeat 0px 2px;
+				background:url(img/github_icon.png) no-repeat 0px 2px;
 				float:left;
 			}
 			#ta{
@@ -58,7 +58,7 @@
 			}
 
 		</style>
-	</head> 
+	</head>
 	<body>
 		<p></p>
 		<div class="container">
@@ -118,7 +118,7 @@
 										<p class="help-block">Using John Resig's Micro-Templating</p>
 										<p class="help-block">Variables can be uesd: relative_path, absolute_path, x, y, w, h, name</p>
 										<p>
-											<img src="./img/cord.png" title="about x,y,w,h" />
+											<img src="img/cord.png" title="about x,y,w,h" />
 										</p>
 										<p>name for fileName without ext</p>
 									</div>
@@ -164,14 +164,14 @@
 							</p>
 						</div>
 					</div>
-					
+
 					<p>
 						<div class="alert">
 						  <button class="close" data-dismiss="alert" id="browser_notice">×</button>
 						  <strong>Notice!</strong> This HTML5 app is only tested for Chrome 18+(recommend) and Firefox 10+ now.
 						</div>
 					</p>
-					
+
 				</div>
 				<div class="span4">
 					<div class="well">
@@ -373,7 +373,7 @@
 					zoom_context.beginPath();
 					zoom_context.arc(l + r, t + r, r, 2*Math.PI, false);
 					zoom_context.fill();
-					zoom_context.globalCompositeOperation = 'source-over'; //restore 
+					zoom_context.globalCompositeOperation = 'source-over'; //restore
 
 				}
 				var clear = function(){
@@ -550,7 +550,7 @@
 						var canGrowRight = (h <= this.root.h);
 						var canGrowDown  = (w <= this.root.w);
 						var shouldGrowRight = canGrowRight && (this.root.h >= (this.root.w + w));
-						var shouldGrowDown  = canGrowDown  && (this.root.w >= (this.root.h + h)); 
+						var shouldGrowDown  = canGrowDown  && (this.root.w >= (this.root.h + h));
 						if (shouldGrowRight) {
 							return this.growRight(w, h);
 						}
@@ -647,7 +647,7 @@
 								return a.w-b.w;
 							}
 						});
-						var maxWidth = imgObjects.reduce(function(a, b){ 
+						var maxWidth = imgObjects.reduce(function(a, b){
 							if(a.w > b.w) {
 								return a;
 							}
@@ -684,7 +684,7 @@
 					}
 				}
 			})();
-			
+
 
 
 
@@ -698,7 +698,7 @@
 				picture_height = max_height.h + max_height.y;
 				picture_width = max_width.w + max_width.x;
 			}
-			
+
 			zoom_canvas.ondragenter = canvas.ondragenter = function() {
 				return false;
 			};
@@ -741,7 +741,7 @@
 					}else {
 						var reader = new FileReader();
 						reader.readAsText(f);
-						reader.onload = function(e) { 
+						reader.onload = function(e) {
 							try{
 								var infile = JSON.parse(e.target.result);
 							}catch(e) {
@@ -1173,7 +1173,7 @@
 					bindClose('browser_notice');
 				};
 			})();
-			
+
 			function encodeBase64(str){
 				var chr1, chr2, chr3, rez = '', arr = [], i = 0, j = 0, code = 0;
 				var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='.split('');
@@ -1252,8 +1252,8 @@
 		})('gopng');
 	</script>
 	<div id="ta">
-	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=9504671" charset="UTF-8"></script>	
-	</div>	
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=9504671" charset="UTF-8"></script>
+	</div>
 	</body>
 
 
